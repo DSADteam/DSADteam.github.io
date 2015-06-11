@@ -1,0 +1,1244 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Desarrolladores de Software de Alto Desempeño</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Hosting Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<!-- webfonts -->
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+<!-- webfonts -->
+<!-- dropdown -->
+<script src="js/jquery.easydropdown.js"></script>
+<link href="css/nav.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!-- end-smoth-scrolling -->
+</head>
+<!-- Header Starts Here -->
+<div class="banner" >
+		<div class="header">
+	<div class="container">
+		<div class="logo">
+			<a href="index.html"><img src="images/logo.png" alt=""></a>
+		</div>
+		<!--
+		<div class="search-bar">
+			<input type="text"  value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+			<input type="submit" value="" />
+	   </div>
+	   -->
+		<span class="menu"> Menu</span>
+			
+		<div class="banner-top">
+								<ul class="nav banner-nav">                                     
+										<li><a class="active" href="index.html">Home</a></li>
+										<!--		
+										<li class="dropdown1"><a href="contact.html">Contact</a></li>  
+										-->
+								</ul>
+								<script>
+									$("span.menu").click(function(){
+										$(" ul.nav").slideToggle("slow" , function(){
+										});
+									});
+								</script>
+							</div>
+		<div class="clearfix"> </div>
+
+	</div>
+	</div>
+			<div class="banner-info">
+			<h1>Desarrolladores de Software de Alto Desempeño </h1>
+			<p>Realizamos proyectos en corto tiempo mediante la metodología de Scrum y Xtreme programming</p>
+		</div>
+</div>
+<div class="clearfix"> </div>
+<!-- Header Ends Here -->	
+<h2>Control de acceso</h2>
+<p><span style="line-height: 1.2; font-family: Arial; font-size: 15px;">En tanto que participante en el desarrollo incluyendo el maestro Scrum, el dueño del producto y los miembros del equipo de desarrollo puedo tener acceso a la aplicación para identificarse como miembro del equipo y obtener soporte al desarrollo de un producto bajo Scrum.</span></p>
+<ol>
+ <li>
+  <p></p>
+  <ul>
+   <li>URL: '/ident/AIdentificar'</li>
+   <li>Método: POST</li><li>Formato de entrada y salida: JSON</li>
+<li>Parámetros POST:
+    <ul>     <li>usuario -  
+Requerido. 
+Long. mínima: <code>1</code>. 
+     </li>     <li>clave -  
+Requerido. 
+Long. mínima: <code>1</code>. 
+     </li>
+    </ul>
+   </li>
+   <li>Roles: Sin restricción de rol
+   <li>Requisitos: No disponible
+   <li>
+    <p><strong>Cursos posibles</strong></p>
+    <ol>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VProductos',</li>
+       <li> msg:"Bienvenido dueño de producto".</li>
+      </ul>
+<p>Se continúa con el rol de duenoProducto.</p>
+     </li>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VMaestroScrum',</li>
+       <li> msg:"Bienvenido Maestro Scrum".</li>
+      </ul>
+<p>Se continúa con el rol de maestroScrum.</p>
+     </li>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VDesarrollador',</li>
+       <li> msg:"Bienvenido Desarrollador".</li>
+      </ul>
+<p>Se continúa con el rol de desarrollador.</p>
+     </li>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VLogin',</li>
+       <li> msg:"Datos de identificación incorrectos".</li>
+      </ul>
+     </li>
+
+    </ol>
+   </li>
+  </ul>
+ </li> <li>
+  <p></p>
+  <ul>
+   <li>URL: '/ident/VLogin'</li>
+   <li>Método: GET</li><li>Formato de salida: JSON</li>
+   <li>Roles: Sin restricción de rol
+  </ul>
+ </li> <li>
+  <p></p>
+  <ul>
+   <li>URL: '/ident/ARegistrar'</li>
+   <li>Método: POST</li><li>Formato de entrada y salida: JSON</li>
+<li>Parámetros POST:
+    <ul>     <li>nombre -  
+Requerido. 
+Long. máxima: <code>50</code>. 
+     </li>     <li>usuario -  
+Requerido. 
+Long. máxima: <code>15</code>. 
+     </li>     <li>clave -  
+Requerido. 
+Long. mínima: <code>8</code>. 
+Long. máxima: <code>16</code>. 
+     </li>     <li>correo -  
+Requerido. 
+     </li>
+    </ul>
+   </li>
+   <li>Roles: Sin restricción de rol
+   <li>Requisitos: No disponible
+   <li>
+    <p><strong>Cursos posibles</strong></p>
+    <ol>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VLogin',</li>
+       <li> msg:"Felicitaciones, Ya estás registrado en la aplicación".</li>
+      </ul>
+     </li>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VRegistro',</li>
+       <li> msg:"Error al tratar de registrarse".</li>
+      </ul>
+     </li>
+
+    </ol>
+   </li>
+  </ul>
+ </li> <li>
+  <p></p>
+  <ul>
+   <li>URL: '/ident/VRegistro'</li>
+   <li>Método: GET</li><li>Formato de salida: JSON</li>
+   <li>Roles: Sin restricción de rol
+  </ul>
+ </li>
+</ol>
+<h2>Pila del producto</h2>
+<p><span style="line-height: 1.2; font-family: Arial; font-size: 15px;">En tanto que Dueño del producto puedo manejar la pila para definiendo actores, acciones y objetivos del producto a desarrollar para establecer el alcance del producto.</span></p>
+<ol>
+ <li>
+  <p></p>
+  <ul>
+   <li>URL: '/prod/VProductos'</li>
+   <li>Método: GET</li><li>Formato de salida: JSON</li>
+   <li>Roles: desarrollador duenoProducto maestroScrum </li>
+  </ul>
+ </li> <li>
+  <p></p>
+  <ul>
+   <li>URL: '/prod/AModifProducto'</li>
+   <li>Método: POST</li><li>Formato de entrada y salida: JSON</li>
+<li>Parámetros POST:
+    <ul>     <li>nombre -  
+Requerido. 
+     </li>     <li>descripcion -  
+Requerido. 
+     </li>     <li>idPila -  
+Opcional. 
+     </li>     <li>opcionesEscala -  
+Opcional. 
+     </li>     <li>escala -  
+Requerido. 
+     </li>
+    </ul>
+   </li>
+   <li>Roles: duenoProducto </li>
+   <li>Requisitos: No disponible
+   <li>
+    <p><strong>Cursos posibles</strong></p>
+    <ol>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VProductos',</li>
+       <li> msg:"Producto actualizado".</li>
+      </ul>
+     </li>
+
+    </ol>
+   </li>
+  </ul>
+ </li> <li>
+  <p></p>
+  <ul>
+   <li>URL: '/prod/VProducto'</li>
+   <li>Método: GET</li><li>Formato de salida: JSON</li>
+Parámetros GET: idPila
+   <li>Roles: desarrollador duenoProducto maestroScrum </li>
+  </ul>
+ </li> <li>
+  <p></p>
+  <ul>
+   <li>URL: '/prod/ACrearProducto'</li>
+   <li>Método: POST</li><li>Formato de entrada y salida: JSON</li>
+<li>Parámetros POST:
+    <ul>     <li>nombre -  
+Requerido. 
+     </li>     <li>descripcion -  
+Requerido. 
+     </li>     <li>idPila -  
+Opcional. 
+     </li>     <li>opcionesEscala -  
+Opcional. 
+     </li>     <li>escala -  
+Requerido. 
+     </li>
+    </ul>
+   </li>
+   <li>Roles: duenoProducto </li>
+   <li>Requisitos: No disponible
+   <li>
+    <p><strong>Cursos posibles</strong></p>
+    <ol>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VProductos',</li>
+       <li> msg:"Producto creado".</li>
+      </ul>
+     </li>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VCrearProducto',</li>
+       <li> msg:"Error al crear producto".</li>
+      </ul>
+     </li>
+
+    </ol>
+   </li>
+  </ul>
+ </li> <li>
+  <p></p>
+  <ul>
+   <li>URL: '/prod/VCrearProducto'</li>
+   <li>Método: GET</li><li>Formato de salida: JSON</li>
+   <li>Roles: duenoProducto </li>
+  </ul>
+ </li>
+</ol>
+<h2>MaestroScrum</h2>
+<p></p>
+<ol>
+ <li>
+  <p></p>
+  <ul>
+   <li>URL: '/mast/VMaestroScrum'</li>
+   <li>Método: GET</li><li>Formato de salida: JSON</li>
+   <li>Roles: maestroScrum </li>
+  </ul>
+ </li>
+</ol>
+<h2>Desarrollador</h2>
+<p></p>
+<ol>
+ <li>
+  <p></p>
+  <ul>
+   <li>URL: '/dev/VDesarrollador'</li>
+   <li>Método: GET</li><li>Formato de salida: JSON</li>
+   <li>Roles: desarrollador </li>
+  </ul>
+ </li>
+</ol>
+<h2>Actores</h2>
+<p><span style="font-size: 15px; font-family: Arial; vertical-align: baseline;" id="docs-internal-guid-ac2a4afb-2a78-eb94-7235-1fa64cd065a1">Identificar actores de los usuarios de la aplicación a desarrollar.</span></p>
+<ol>
+ <li>
+  <p></p>
+  <ul>
+   <li>URL: '/actor/AModifActor'</li>
+   <li>Método: POST</li><li>Formato de entrada y salida: JSON</li>
+<li>Parámetros POST:
+    <ul>     <li>nombre -  
+Opcional. 
+     </li>     <li>descripcion -  
+Requerido. 
+     </li>     <li>idActor -  
+Opcional. 
+     </li>     <li>idPila -  
+Opcional. 
+     </li>
+    </ul>
+   </li>
+   <li>Roles: duenoProducto </li>
+   <li>Requisitos: No disponible
+   <li>
+    <p><strong>Cursos posibles</strong></p>
+    <ol>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VProducto',</li>
+       <li> msg:"Actor actualizado".</li>
+      </ul>
+     </li>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VActor',</li>
+       <li> msg:"Error al modificar actor".</li>
+      </ul>
+     </li>
+
+    </ol>
+   </li>
+  </ul>
+ </li> <li>
+  <p></p>
+  <ul>
+   <li>URL: '/actor/VActor'</li>
+   <li>Método: GET</li><li>Formato de salida: JSON</li>
+Parámetros GET: idActor
+   <li>Roles: desarrollador duenoProducto maestroScrum </li>
+  </ul>
+ </li> <li>
+  <p></p>
+  <ul>
+   <li>URL: '/actor/ACrearActor'</li>
+   <li>Método: POST</li><li>Formato de entrada y salida: JSON</li>
+<li>Parámetros POST:
+    <ul>     <li>nombre -  
+Opcional. 
+     </li>     <li>descripcion -  
+Requerido. 
+     </li>     <li>idActor -  
+Opcional. 
+     </li>     <li>idPila -  
+Opcional. 
+     </li>
+    </ul>
+   </li>
+   <li>Roles: duenoProducto </li>
+   <li>Requisitos: No disponible
+   <li>
+    <p><strong>Cursos posibles</strong></p>
+    <ol>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VProducto',</li>
+       <li> msg:"Actor creado".</li>
+      </ul>
+     </li>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VCrearActor',</li>
+       <li> msg:"Error al crear actor".</li>
+      </ul>
+     </li>
+
+    </ol>
+   </li>
+  </ul>
+ </li> <li>
+  <p></p>
+  <ul>
+   <li>URL: '/actor/VCrearActor'</li>
+   <li>Método: GET</li><li>Formato de salida: JSON</li>
+Parámetros GET: idPila
+   <li>Roles: duenoProducto </li>
+  </ul>
+ </li> <li>
+  <p></p>
+  <ul>
+   <li>URL: '/actor/AElimActor'</li>
+   <li>Método: GET</li><li>Formato de salida: JSON</li>
+Parámetros GET: idActor
+   <li>Roles: Sin restricción de rol
+   <li>Requisitos: No disponible
+   <li>
+    <p><strong>Cursos posibles</strong></p>
+    <ol>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VProducto',</li>
+       <li> msg:"Actor eliminado".</li>
+      </ul>
+     </li>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VActor',</li>
+       <li> msg:"No se pudo eliminar este actor".</li>
+      </ul>
+     </li>
+
+    </ol>
+   </li>
+  </ul>
+ </li>
+</ol>
+<h2>Objetivos</h2>
+<p><span style="font-family: Arial; font-size: 15px;">Definir los objetivos de la aplicación a desarrollar.</span></p>
+<ol>
+ <li>
+  <p></p>
+  <ul>
+   <li>URL: '/objetivo/AModifObjetivo'</li>
+   <li>Método: POST</li><li>Formato de entrada y salida: JSON</li>
+<li>Parámetros POST:
+    <ul>     <li>descripcion -  
+Opcional. 
+     </li>     <li>idObjetivo -  
+Opcional. 
+     </li>     <li>idPila -  
+Opcional. 
+     </li>     <li>opcionesTransversalidad -  
+Opcional. 
+     </li>     <li>transversal -  
+Requerido. 
+     </li>
+    </ul>
+   </li>
+   <li>Roles: duenoProducto </li>
+   <li>Requisitos: No disponible
+   <li>
+    <p><strong>Cursos posibles</strong></p>
+    <ol>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VProducto',</li>
+       <li> msg:"Objetivo actualizado".</li>
+      </ul>
+     </li>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VObjetivo',</li>
+       <li> msg:"Error al modificar objetivo".</li>
+      </ul>
+     </li>
+
+    </ol>
+   </li>
+  </ul>
+ </li> <li>
+  <p></p>
+  <ul>
+   <li>URL: '/objetivo/VObjetivo'</li>
+   <li>Método: GET</li><li>Formato de salida: JSON</li>
+Parámetros GET: idObjetivo
+   <li>Roles: desarrollador duenoProducto maestroScrum </li>
+  </ul>
+ </li> <li>
+  <p></p>
+  <ul>
+   <li>URL: '/objetivo/ACrearObjetivo'</li>
+   <li>Método: POST</li><li>Formato de entrada y salida: JSON</li>
+<li>Parámetros POST:
+    <ul>     <li>descripcion -  
+Opcional. 
+     </li>     <li>idObjetivo -  
+Opcional. 
+     </li>     <li>idPila -  
+Opcional. 
+     </li>     <li>opcionesTransversalidad -  
+Opcional. 
+     </li>     <li>transversal -  
+Requerido. 
+     </li>
+    </ul>
+   </li>
+   <li>Roles: duenoProducto </li>
+   <li>Requisitos: No disponible
+   <li>
+    <p><strong>Cursos posibles</strong></p>
+    <ol>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VProducto',</li>
+       <li> msg:"Actor creado".</li>
+      </ul>
+     </li>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VCrearObjetivo',</li>
+       <li> msg:"Error al crear objetivo".</li>
+      </ul>
+     </li>
+
+    </ol>
+   </li>
+  </ul>
+ </li> <li>
+  <p></p>
+  <ul>
+   <li>URL: '/objetivo/VCrearObjetivo'</li>
+   <li>Método: GET</li><li>Formato de salida: JSON</li>
+Parámetros GET: idPila
+   <li>Roles: duenoProducto </li>
+  </ul>
+ </li> <li>
+  <p></p>
+  <ul>
+   <li>URL: '/objetivo/AElimObjetivo'</li>
+   <li>Método: GET</li><li>Formato de salida: JSON</li>
+Parámetros GET: idObjetivo
+   <li>Roles: desarrollador duenoProducto maestroScrum </li>
+   <li>Requisitos: No disponible
+   <li>
+    <p><strong>Cursos posibles</strong></p>
+    <ol>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VProducto',</li>
+       <li> msg:"Objetivo eliminado".</li>
+      </ul>
+     </li>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VObjetivo',</li>
+       <li> msg:"No se pudo eliminar este objetivo".</li>
+      </ul>
+     </li>
+
+    </ol>
+   </li>
+  </ul>
+ </li>
+</ol>
+<h2>Acciones</h2>
+<p>Definir los objetivos de la aplicación a desarrollar.</p>
+<ol>
+ <li>
+  <p></p>
+  <ul>
+   <li>URL: '/accion/AModifAccion'</li>
+   <li>Método: POST</li><li>Formato de entrada y salida: JSON</li>
+<li>Parámetros POST:
+    <ul>     <li>descripcion -  
+Opcional. 
+     </li>     <li>idAccion -  
+Opcional. 
+     </li>     <li>idPila -  
+Opcional. 
+     </li>
+    </ul>
+   </li>
+   <li>Roles: duenoProducto </li>
+   <li>Requisitos: No disponible
+   <li>
+    <p><strong>Cursos posibles</strong></p>
+    <ol>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VProducto',</li>
+       <li> msg:"Acción actualizada".</li>
+      </ul>
+     </li>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VAccion',</li>
+       <li> msg:"Error al modificar acción".</li>
+      </ul>
+     </li>
+
+    </ol>
+   </li>
+  </ul>
+ </li> <li>
+  <p></p>
+  <ul>
+   <li>URL: '/accion/VAccion'</li>
+   <li>Método: GET</li><li>Formato de salida: JSON</li>
+Parámetros GET: idAccion
+   <li>Roles: desarrollador duenoProducto maestroScrum </li>
+  </ul>
+ </li> <li>
+  <p></p>
+  <ul>
+   <li>URL: '/accion/AElimAccion'</li>
+   <li>Método: GET</li><li>Formato de salida: JSON</li>
+Parámetros GET: idAccion
+   <li>Roles: desarrollador duenoProducto maestroScrum </li>
+   <li>Requisitos: No disponible
+   <li>
+    <p><strong>Cursos posibles</strong></p>
+    <ol>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VProducto',</li>
+       <li> msg:"Accion eliminada".</li>
+      </ul>
+     </li>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VAccion',</li>
+       <li> msg:"No se pudo eliminar esta acción".</li>
+      </ul>
+     </li>
+
+    </ol>
+   </li>
+  </ul>
+ </li> <li>
+  <p></p>
+  <ul>
+   <li>URL: '/accion/VCrearAccion'</li>
+   <li>Método: GET</li><li>Formato de salida: JSON</li>
+Parámetros GET: idPila
+   <li>Roles: duenoProducto </li>
+  </ul>
+ </li> <li>
+  <p></p>
+  <ul>
+   <li>URL: '/accion/ACrearAccion'</li>
+   <li>Método: POST</li><li>Formato de entrada y salida: JSON</li>
+<li>Parámetros POST:
+    <ul>     <li>descripcion -  
+Opcional. 
+     </li>     <li>idAccion -  
+Opcional. 
+     </li>     <li>idPila -  
+Opcional. 
+     </li>
+    </ul>
+   </li>
+   <li>Roles: duenoProducto </li>
+   <li>Requisitos: No disponible
+   <li>
+    <p><strong>Cursos posibles</strong></p>
+    <ol>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VProducto',</li>
+       <li> msg:"Acción creada".</li>
+      </ul>
+     </li>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VCrearAccion',</li>
+       <li> msg:"Error al crear acción".</li>
+      </ul>
+     </li>
+
+    </ol>
+   </li>
+  </ul>
+ </li>
+</ol>
+<h2>Historias</h2>
+<p></p>
+<ol>
+ <li>
+  <p></p>
+  <ul>
+   <li>URL: '/historias/VHistorias'</li>
+   <li>Método: GET</li><li>Formato de salida: JSON</li>
+Parámetros GET: idPila
+   <li>Roles: desarrollador duenoProducto maestroScrum </li>
+  </ul>
+ </li> <li>
+  <p></p>
+  <ul>
+   <li>URL: '/historias/ACrearHistoria'</li>
+   <li>Método: POST</li><li>Formato de entrada y salida: JSON</li>
+<li>Parámetros POST:
+    <ul>     <li>opcionesActores -  
+Opcional. 
+     </li>     <li>opcionesTiposHistoria -  
+Opcional. 
+     </li>     <li>opcionesAcciones -  
+Opcional. 
+     </li>     <li>opcionesObjetivos -  
+Opcional. 
+     </li>     <li>opcionesHistorias -  
+Opcional. 
+     </li>     <li>codigo -  
+Requerido. 
+     </li>     <li>super -  
+Opcional. 
+     </li>     <li>actores -  
+Opcional. 
+     </li>     <li>tipo -  
+Opcional. 
+     </li>     <li>accion -  
+Opcional. 
+     </li>     <li>objetivos -  
+Opcional. 
+     </li>     <li>idPila -  
+Opcional. 
+     </li>     <li>idHistoria -  
+Opcional. 
+     </li>     <li>opcionesPrioridad -  
+Opcional. 
+     </li>     <li>prioridad -  
+Requerido. 
+     </li>
+    </ul>
+   </li>
+   <li>Roles: desarrollador duenoProducto maestroScrum </li>
+   <li>Requisitos: No disponible
+   <li>
+    <p><strong>Cursos posibles</strong></p>
+    <ol>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VHistorias',</li>
+       <li> msg:"Historia creada".</li>
+      </ul>
+     </li>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VCrearHistoria',</li>
+       <li> msg:"Error al crear historia".</li>
+      </ul>
+     </li>
+
+    </ol>
+   </li>
+  </ul>
+ </li> <li>
+  <p></p>
+  <ul>
+   <li>URL: '/historias/VCrearHistoria'</li>
+   <li>Método: GET</li><li>Formato de salida: JSON</li>
+Parámetros GET: idPila
+   <li>Roles: desarrollador duenoProducto maestroScrum </li>
+  </ul>
+ </li> <li>
+  <p></p>
+  <ul>
+   <li>URL: '/historias/AModifHistoria'</li>
+   <li>Método: POST</li><li>Formato de entrada y salida: JSON</li>
+<li>Parámetros POST:
+    <ul>     <li>opcionesActores -  
+Opcional. 
+     </li>     <li>opcionesTiposHistoria -  
+Opcional. 
+     </li>     <li>opcionesAcciones -  
+Opcional. 
+     </li>     <li>opcionesObjetivos -  
+Opcional. 
+     </li>     <li>opcionesHistorias -  
+Opcional. 
+     </li>     <li>codigo -  
+Requerido. 
+     </li>     <li>super -  
+Opcional. 
+     </li>     <li>actores -  
+Opcional. 
+     </li>     <li>tipo -  
+Opcional. 
+     </li>     <li>accion -  
+Opcional. 
+     </li>     <li>objetivos -  
+Opcional. 
+     </li>     <li>idPila -  
+Opcional. 
+     </li>     <li>idHistoria -  
+Opcional. 
+     </li>     <li>opcionesPrioridad -  
+Opcional. 
+     </li>     <li>prioridad -  
+Requerido. 
+     </li>
+    </ul>
+   </li>
+   <li>Roles: desarrollador duenoProducto maestroScrum </li>
+   <li>Requisitos: No disponible
+   <li>
+    <p><strong>Cursos posibles</strong></p>
+    <ol>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VHistorias',</li>
+       <li> msg:"Historia modificada".</li>
+      </ul>
+     </li>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VHistoria',</li>
+       <li> msg:"Error al modificar historia".</li>
+      </ul>
+     </li>
+
+    </ol>
+   </li>
+  </ul>
+ </li> <li>
+  <p></p>
+  <ul>
+   <li>URL: '/historias/VHistoria'</li>
+   <li>Método: GET</li><li>Formato de salida: JSON</li>
+Parámetros GET: idHistoria
+   <li>Roles: desarrollador duenoProducto maestroScrum </li>
+  </ul>
+ </li> <li>
+  <p></p>
+  <ul>
+   <li>URL: '/historias/ACambiarPrioridades'</li>
+   <li>Método: POST</li><li>Formato de entrada y salida: JSON</li>
+<li>Parámetros POST:
+    <ul>     <li>opcionesPrioridad -  
+Opcional. 
+     </li>     <li>idPila -  
+Opcional. 
+     </li>     <li>lista -  
+Opcional. 
+     </li>     <li>idHistoria -  
+Opcional. 
+     </li>     <li>prioridad -  
+Requerido. 
+     </li>
+    </ul>
+   </li>
+   <li>Roles: desarrollador duenoProducto maestroScrum </li>
+   <li>Requisitos: No disponible
+   <li>
+    <p><strong>Cursos posibles</strong></p>
+    <ol>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VHistorias',</li>
+       <li> msg:"Prioridades reasignadas".</li>
+      </ul>
+     </li>
+
+    </ol>
+   </li>
+  </ul>
+ </li> <li>
+  <p></p>
+  <ul>
+   <li>URL: '/historias/AElimHistoria'</li>
+   <li>Método: GET</li><li>Formato de salida: JSON</li>
+Parámetros GET: idHistoria
+   <li>Roles: desarrollador duenoProducto maestroScrum </li>
+   <li>Requisitos: No disponible
+   <li>
+    <p><strong>Cursos posibles</strong></p>
+    <ol>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VHistorias',</li>
+       <li> msg:"Historia eliminada".</li>
+      </ul>
+     </li>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VHistoria',</li>
+       <li> msg:"No se pudo eliminar esta historia".</li>
+      </ul>
+     </li>
+
+    </ol>
+   </li>
+  </ul>
+ </li> <li>
+  <p></p>
+  <ul>
+   <li>URL: '/historias/VPrioridades'</li>
+   <li>Método: GET</li><li>Formato de salida: JSON</li>
+Parámetros GET: idPila
+   <li>Roles: desarrollador duenoProducto maestroScrum </li>
+  </ul>
+ </li>
+</ol>
+<h2>Tareas</h2>
+<p></p>
+<ol>
+ <li>
+  <p></p>
+  <ul>
+   <li>URL: '/tareas/ACrearTarea'</li>
+   <li>Método: POST</li><li>Formato de entrada y salida: JSON</li>
+<li>Parámetros POST:
+    <ul>     <li>idHistoria -  
+Opcional. 
+     </li>     <li>idTarea -  
+Opcional. 
+     </li>     <li>descripcion -  
+Requerido. 
+     </li>
+    </ul>
+   </li>
+   <li>Roles: Sin restricción de rol
+   <li>Requisitos: No disponible
+   <li>
+    <p><strong>Cursos posibles</strong></p>
+    <ol>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VHistoria',</li>
+       <li> msg:"Tarea creada".</li>
+      </ul>
+     </li>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VCrearTarea',</li>
+       <li> msg:"No se pudo crear tarea.".</li>
+      </ul>
+     </li>
+
+    </ol>
+   </li>
+  </ul>
+ </li> <li>
+  <p></p>
+  <ul>
+   <li>URL: '/tareas/VCrearTarea'</li>
+   <li>Método: GET</li><li>Formato de salida: JSON</li>
+Parámetros GET: idHistoria
+   <li>Roles: desarrollador duenoProducto maestroScrum </li>
+  </ul>
+ </li> <li>
+  <p></p>
+  <ul>
+   <li>URL: '/tareas/AModifTarea'</li>
+   <li>Método: POST</li><li>Formato de entrada y salida: JSON</li>
+<li>Parámetros POST:
+    <ul>     <li>idHistoria -  
+Opcional. 
+     </li>     <li>idTarea -  
+Opcional. 
+     </li>     <li>descripcion -  
+Requerido. 
+     </li>
+    </ul>
+   </li>
+   <li>Roles: Sin restricción de rol
+   <li>Requisitos: No disponible
+   <li>
+    <p><strong>Cursos posibles</strong></p>
+    <ol>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VHistoria',</li>
+       <li> msg:"Tarea modificada".</li>
+      </ul>
+     </li>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VCrearTarea',</li>
+       <li> msg:"No se pudo modificar esta tarea.".</li>
+      </ul>
+     </li>
+
+    </ol>
+   </li>
+  </ul>
+ </li> <li>
+  <p></p>
+  <ul>
+   <li>URL: '/tareas/VTarea'</li>
+   <li>Método: GET</li><li>Formato de salida: JSON</li>
+Parámetros GET: idTarea
+   <li>Roles: desarrollador duenoProducto maestroScrum </li>
+  </ul>
+ </li> <li>
+  <p></p>
+  <ul>
+   <li>URL: '/tareas/AElimTarea'</li>
+   <li>Método: GET</li><li>Formato de salida: JSON</li>
+   <li>Roles: desarrollador duenoProducto maestroScrum </li>
+   <li>Requisitos: No disponible
+   <li>
+    <p><strong>Cursos posibles</strong></p>
+    <ol>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VHistoria',</li>
+       <li> msg:"Historia borrada".</li>
+      </ul>
+     </li>
+     <li>
+      <p>resultado:</p>
+      <ul>
+       <li>label:'/VTarea',</li>
+       <li> msg:"No se pudo eliminar esta tarea".</li>
+      </ul>
+     </li>
+
+    </ol>
+   </li>
+  </ul>
+ </li>
+</ol>
+
+<div class="plans">
+		<div class="container">
+
+			<!-- pricing table 
+			<h1 class="heading">Most Popular Plans</h1>
+
+			<div class="col-md-4 one_third pricing">
+				<div class="pricing_top">
+					<h6>Starter Plan</h6>
+					<p><sup>$</sup>8.95</p>
+				</div>
+				<div class="pricing_middle">
+					<ul>
+						<li>10GB Disk Space</li>
+						<li>100GB Bandwidth</li>
+						<li>Free DDoS Protection</li>
+						<li>Free Daily Backups</li>
+						<li>Managed Hosting</li>
+					</ul>
+				</div>
+				<div class="pricing_bottom">
+					<a href="#">Order</a>
+				</div>
+			</div>
+
+			<div class="col-md-4 one_third pricing">
+				<div class="pricing_top">
+					<h6>Advanced Plan</h6>
+					<p><sup>$</sup>24.95</p>
+				</div>
+				<div class="pricing_middle">
+					<ul>
+						<li>10GB Disk Space</li>
+						<li>100GB Bandwidth</li>
+						<li>Free DDoS Protection</li>
+						<li>Free Daily Backups</li>
+						<li>Managed Hosting</li>
+					</ul>
+				</div>
+				<div class="pricing_bottom">
+					<a href="#">Order</a>
+				</div>
+			</div>
+
+			<div class="col-md-4 one_third last pricing">
+				<div class="pricing_top">
+					<h6>Business Plan</h6>
+					<p><sup>$</sup>39.95</p>
+				</div>
+				<div class="pricing_middle">
+					<ul>
+						<li>10GB Disk Space</li>
+						<li>100GB Bandwidth</li>
+						<li>Free DDoS Protection</li>
+						<li>Free Daily Backups</li>
+						<li>Managed Hosting</li>
+					</ul>
+				</div>
+				<div class="pricing_bottom">
+					<a href="#">Order</a>
+				</div>
+			</div>
+
+			<div class="clearfix"></div>
+			-->
+		</div>
+	</div>
+	<div class="fullwidth-section semi-background">
+
+                        <div class="fullwidth-bg">	  
+                        	<h1 style="color:white">Contáctanos</h1>
+
+                            <div class="overlay left-aligned">
+                            	<div class="dt-sc-one-half column first">
+                                </div>
+                            </div>
+                        </div>
+    </div>   
+
+<!--services-->
+
+<div class="services-bottom">
+	<p>Entregas a<span>TODOS</span>los clientes en tiempo recod!</p>
+</div>
+<!--/srvices-->
+<!-- #Testimonials -->
+		<div id="testimonialWrapper">
+			<div class="container">
+				<div class="row">
+				<div>
+					Repositorios Github: <a href="https://github.com/DSADteam"> <b>DSDAteam</b></a>
+				</div>
+			<!--
+					<div class="col-md-2 col-md-offset-1">
+						<div id="testimonialPicture"></div>
+					</div>
+					<div class="col-md-7 col-md-offset-1">
+						<h2>What our clients are saying...</h2>
+						<h3>“MyVPS is awesome! Reliable, secure hosting, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel pharetra diam. Aenean convallis nibh facilisis risus and clients. 9/12, 5 Stars all around lorem ipsum dolto sit amet!”</h3>
+						<a href="#">Lorem ipsum - www.google.com</a>
+					</div>
+					<div class="clearfix"></div>
+			-->
+				</div>
+			</div>
+
+
+		</div>
+		<!-- /#Testimonials -->
+<!-- #Footer 
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<span class="title">Latest Tweets</span>
+						<p>Lorem ipsum dolor sit amet, <span class="greenText">#tweetTag</span> consectetur adipiscing elit. Ut vel pharetra diam. Aenean convallis nibh facilisis risus convallis, non ornare tellus vehicula.<span class="tweetTime">10 Minutes Ago</span></p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel pharetra diam. Aenean convallis nibh facilisis risus convallis, non ornare tellus vehicula.<span class="tweetTime">1 Hour Ago</span></p>
+					</div>
+					<div class="col-md-2 col-xs-6 col-sm-4">
+						<ul class="footerMenu">
+							<li class="title">What we do</li>
+							<li><a href="#">Plans</a></li>
+							<li><a href="#">Overview</a></li>
+							<li><a href="#">Features Tour</a></li>
+							<li><a href="#">CloudFlare's Network</a></li>
+							<li><a href="#">CloudFlare Apps</a></li>
+						</ul>
+					</div>
+					<div class="col-md-2 col-xs-6 col-sm-4">
+						<ul class="footerMenu">
+							<li class="title">Services</li>
+							<li><a href="#">Virtual Private Servers</a></li>
+							<li><a href="#">Dedicated Servers</a></li>
+							<li><a href="#">cloud vps</a></li>
+							<li><a href="#">Server Management</a></li>
+							<li><a href="#">Script Installation</a></li>
+						</ul>
+					</div>
+					<div class="col-md-2 col-xs-6 col-sm-4">
+						<ul class="footerAddress">
+							<li class="title">Contact Us</li>
+							<li><strong>Address:</li>
+							<li>p. Palace, Bangalore Palace Road, India, LP4 2P8</li>
+							<li><strong>Phone:</strong></li>
+							<li>080 1249 4654</li>
+						</ul>
+					</div>
+				</div>
+				<hr>
+			</div>			
+			<div class="copyrights">
+				<div class="container">
+					<p>Copyrights &copy; 2015 Hosting_Store All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+				</div>
+			</div>
+		</footer>
+	-->
+		<!-- /#Footer -->
+		<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+	</script>
+	<!-- //here ends scrolling icon -->
+</body>
+</html>
