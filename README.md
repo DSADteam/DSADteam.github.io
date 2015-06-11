@@ -1,2 +1,3 @@
 # DSADteam.github.io
-Pagina web del grupo de Desarrolladores de Alto Desempeño USB
+Página web del grupo de Desarrolladores de Alto Desempeño USB  
+Creada el día 6 de Junio
